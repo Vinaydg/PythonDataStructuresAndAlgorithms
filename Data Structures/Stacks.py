@@ -30,8 +30,10 @@ class Stack:
             self.last = None
             self.first = None
             self.length -= 1
+            popNode.next = None
             return popNode.val
         self.last = popNode.next
+        popNode.next = None
         self.length -= 1
         return popNode.val
 
@@ -42,5 +44,8 @@ stack.push(200)
 stack.push(300)
 stack.push(500)
 print("-----------------------")
+print(stack.pop())
+print(stack.pop())
+print(stack.pop())
 print(stack.pop())
 print(stack.pop())

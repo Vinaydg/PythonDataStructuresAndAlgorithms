@@ -30,9 +30,11 @@ class Queue:
             self.first = None
             self.last = None
             self.length -= 1
+            removedNode.next = None
             return removedNode.val
         self.first = removedNode.next
         self.length -= 1
+        removedNode.next = None
         return removedNode.val
 
 
@@ -42,7 +44,6 @@ q.enqueue(20)
 q.enqueue(40)
 q.enqueue(50)
 q.enqueue(60)
-print(q.dequeue())
 print(q.dequeue())
 print(q.dequeue())
 print(q.dequeue())
