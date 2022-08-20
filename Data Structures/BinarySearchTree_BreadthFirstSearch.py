@@ -13,6 +13,7 @@ class BinarySearchTree:
     def insert(self, val):
         newNode = Node(val)
         if self.root is None:
+
             self.root = newNode
             return self
         else:
