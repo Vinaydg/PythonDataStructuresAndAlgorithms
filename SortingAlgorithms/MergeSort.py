@@ -34,4 +34,4 @@ def MergeSort(arr):
     return merge(left, right)
 
 
-print(MergeSort([random.randint(0, 1000) for i in range(1000)]))
+print(MergeSort([random.randint(111, 1000) for i in range(10000)]))
